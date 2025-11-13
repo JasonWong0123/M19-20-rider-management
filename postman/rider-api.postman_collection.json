@@ -1,0 +1,366 @@
+{
+  "info": {
+    "name": "M19 Rider Backend API Collection",
+    "_postman_id": "rider-api-m19-001",
+    "description": "Complete API collection for Rider Backend - Order Management and Income Statistics",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "version": "1.0.0"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:3000",
+      "type": "string"
+    },
+    {
+      "key": "riderId",
+      "value": "rider_001",
+      "type": "string"
+    }
+  ],
+  "item": [
+    {
+      "name": "API Info",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api",
+          "host": ["{{baseUrl}}"],
+          "path": ["api"]
+        },
+        "description": "Get API information and available endpoints"
+      },
+      "response": []
+    },
+    {
+      "name": "M19 - Order Management",
+      "item": [
+        {
+          "name": "Get Ongoing Orders",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/rider/orders?status=ongoing",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "rider", "orders"],
+              "query": [
+                {
+                  "key": "status",
+                  "value": "ongoing",
+                  "description": "Filter orders by status (ongoing, completed, all)"
+                }
+              ]
+            },
+            "description": "Retrieve all ongoing orders for the rider (assigned, picked_up, in_transit)"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Completed Orders",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/rider/orders?status=completed",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "rider", "orders"],
+              "query": [
+                {
+                  "key": "status",
+                  "value": "completed",
+                  "description": "Filter orders by status"
+                }
+              ]
+            },
+            "description": "Retrieve all completed orders for the rider (delivered, cancelled)"
+          },
+          "response": []
+        },
+        {
+          "name": "Get All Orders",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/rider/orders?status=all",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "rider", "orders"],
+              "query": [
+                {
+                  "key": "status",
+                  "value": "all",
+                  "description": "Get all orders regardless of status"
+                }
+              ]
+            },
+            "description": "Retrieve all orders for the rider"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Order Detail",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/rider/order/ORD001",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "rider", "order", "ORD001"]
+            },
+            "description": "Get detailed information about a specific order by ID"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Order Statistics",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/rider/orders/statistics",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "rider", "orders", "statistics"]
+            },
+            "description": "Get order statistics including total orders, earnings, and today's metrics"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Recent Orders",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/rider/orders/recent?limit=5",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "rider", "orders", "recent"],
+              "query": [
+                {
+                  "key": "limit",
+                  "value": "5",
+                  "description": "Number of recent orders to return"
+                }
+              ]
+            },
+            "description": "Get the most recent orders"
+          },
+          "response": []
+        },
+        {
+          "name": "Search Orders",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/rider/orders/search?query=pizza",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "rider", "orders", "search"],
+              "query": [
+                {
+                  "key": "query",
+                  "value": "pizza",
+                  "description": "Search keyword for orders"
+                }
+              ]
+            },
+            "description": "Search orders by customer name, order ID, or address"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "M20 - Income Statistics",
+      "item": [
+        {
+          "name": "Get Realtime Income",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/rider/income/realtime",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "rider", "income", "realtime"]
+            },
+            "description": "Get real-time income data including total earnings, today's earnings, and available balance"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Income Trend - Daily",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/rider/income/trend?period=daily",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "rider", "income", "trend"],
+              "query": [
+                {
+                  "key": "period",
+                  "value": "daily",
+                  "description": "Time period for trend (daily, weekly, monthly)"
+                }
+              ]
+            },
+            "description": "Get income trend data for the last 7 days"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Income Trend - Weekly",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/rider/income/trend?period=weekly",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "rider", "income", "trend"],
+              "query": [
+                {
+                  "key": "period",
+                  "value": "weekly",
+                  "description": "Time period for trend"
+                }
+              ]
+            },
+            "description": "Get income trend data for the last 4 weeks"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Income Trend - Monthly",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/rider/income/trend?period=monthly",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "rider", "income", "trend"],
+              "query": [
+                {
+                  "key": "period",
+                  "value": "monthly",
+                  "description": "Time period for trend"
+                }
+              ]
+            },
+            "description": "Get income trend data for the last 6 months"
+          },
+          "response": []
+        },
+        {
+          "name": "Submit Withdrawal Request",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"amount\": 50.00,\n  \"accountInfo\": \"Bank Account: **** **** **** 1234\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/rider/income/withdraw",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "rider", "income", "withdraw"]
+            },
+            "description": "Submit a withdrawal request with amount and account information"
+          },
+          "response": []
+        },
+        {
+          "name": "Get All Withdrawal Records",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/rider/income/records?status=all",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "rider", "income", "records"],
+              "query": [
+                {
+                  "key": "status",
+                  "value": "all",
+                  "description": "Filter by status (all, pending, completed, rejected)"
+                }
+              ]
+            },
+            "description": "Get all withdrawal records"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Pending Withdrawals",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/rider/income/records?status=pending",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "rider", "income", "records"],
+              "query": [
+                {
+                  "key": "status",
+                  "value": "pending",
+                  "description": "Filter by status"
+                }
+              ]
+            },
+            "description": "Get pending withdrawal records"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Completed Withdrawals",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/rider/income/records?status=completed",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "rider", "income", "records"],
+              "query": [
+                {
+                  "key": "status",
+                  "value": "completed",
+                  "description": "Filter by status"
+                }
+              ]
+            },
+            "description": "Get completed withdrawal records"
+          },
+          "response": []
+        },
+        {
+          "name": "Update Withdrawal Status (Admin)",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"status\": \"completed\",\n  \"notes\": \"Processed successfully via bank transfer\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/rider/income/withdraw/WD1700049600000",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "rider", "income", "withdraw", "WD1700049600000"]
+            },
+            "description": "Update withdrawal status (Admin/Demo endpoint)"
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}

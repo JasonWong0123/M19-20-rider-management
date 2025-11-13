@@ -1,0 +1,369 @@
+{
+  "orders": [
+    {
+      "orderId": "ORD001",
+      "riderId": "rider_001",
+      "customerName": "John Smith",
+      "customerPhone": "+1-555-0101",
+      "restaurantName": "Pizza Palace",
+      "restaurantAddress": "123 Main St, Downtown",
+      "pickupAddress": "123 Main St, Downtown",
+      "deliveryAddress": "456 Oak Ave, Apt 5B, Uptown",
+      "distance": 3.5,
+      "deliveryFee": 8.50,
+      "status": "assigned",
+      "orderItems": [
+        {
+          "name": "Large Pepperoni Pizza",
+          "quantity": 1,
+          "price": 18.99
+        },
+        {
+          "name": "Garlic Bread",
+          "quantity": 2,
+          "price": 4.99
+        }
+      ],
+      "specialInstructions": "Ring doorbell twice, leave at door",
+      "estimatedPickupTime": "2025-11-13T13:30:00Z",
+      "estimatedDeliveryTime": "2025-11-13T14:00:00Z",
+      "createdAt": "2025-11-13T13:15:00Z",
+      "updatedAt": "2025-11-13T13:15:00Z",
+      "pickedUpAt": null,
+      "deliveredAt": null
+    },
+    {
+      "orderId": "ORD002",
+      "riderId": "rider_001",
+      "customerName": "Emily Johnson",
+      "customerPhone": "+1-555-0102",
+      "restaurantName": "Burger House",
+      "restaurantAddress": "789 Elm St, Midtown",
+      "pickupAddress": "789 Elm St, Midtown",
+      "deliveryAddress": "321 Pine Rd, Suite 12, Downtown",
+      "distance": 2.8,
+      "deliveryFee": 7.00,
+      "status": "picked_up",
+      "orderItems": [
+        {
+          "name": "Double Cheeseburger",
+          "quantity": 2,
+          "price": 12.99
+        },
+        {
+          "name": "French Fries",
+          "quantity": 2,
+          "price": 3.99
+        },
+        {
+          "name": "Milkshake",
+          "quantity": 1,
+          "price": 5.99
+        }
+      ],
+      "specialInstructions": "Extra ketchup packets please",
+      "estimatedPickupTime": "2025-11-13T13:00:00Z",
+      "estimatedDeliveryTime": "2025-11-13T13:25:00Z",
+      "createdAt": "2025-11-13T12:45:00Z",
+      "updatedAt": "2025-11-13T13:05:00Z",
+      "pickedUpAt": "2025-11-13T13:05:00Z",
+      "deliveredAt": null
+    },
+    {
+      "orderId": "ORD003",
+      "riderId": "rider_001",
+      "customerName": "Michael Chen",
+      "customerPhone": "+1-555-0103",
+      "restaurantName": "Sushi Express",
+      "restaurantAddress": "555 Market St, Downtown",
+      "pickupAddress": "555 Market St, Downtown",
+      "deliveryAddress": "888 Broadway, Floor 3, Midtown",
+      "distance": 4.2,
+      "deliveryFee": 9.50,
+      "status": "in_transit",
+      "orderItems": [
+        {
+          "name": "California Roll",
+          "quantity": 2,
+          "price": 8.99
+        },
+        {
+          "name": "Salmon Sashimi",
+          "quantity": 1,
+          "price": 15.99
+        },
+        {
+          "name": "Miso Soup",
+          "quantity": 2,
+          "price": 3.50
+        }
+      ],
+      "specialInstructions": "Include chopsticks and soy sauce",
+      "estimatedPickupTime": "2025-11-13T12:30:00Z",
+      "estimatedDeliveryTime": "2025-11-13T13:00:00Z",
+      "createdAt": "2025-11-13T12:15:00Z",
+      "updatedAt": "2025-11-13T12:35:00Z",
+      "pickedUpAt": "2025-11-13T12:35:00Z",
+      "deliveredAt": null
+    },
+    {
+      "orderId": "ORD004",
+      "riderId": "rider_001",
+      "customerName": "Sarah Williams",
+      "customerPhone": "+1-555-0104",
+      "restaurantName": "Taco Fiesta",
+      "restaurantAddress": "234 Central Ave, Uptown",
+      "pickupAddress": "234 Central Ave, Uptown",
+      "deliveryAddress": "567 Lake Dr, House 42, Lakeside",
+      "distance": 5.1,
+      "deliveryFee": 11.00,
+      "status": "delivered",
+      "orderItems": [
+        {
+          "name": "Beef Tacos",
+          "quantity": 3,
+          "price": 3.99
+        },
+        {
+          "name": "Chicken Quesadilla",
+          "quantity": 1,
+          "price": 9.99
+        },
+        {
+          "name": "Nachos",
+          "quantity": 1,
+          "price": 7.99
+        }
+      ],
+      "specialInstructions": "Extra salsa and guacamole",
+      "estimatedPickupTime": "2025-11-13T11:30:00Z",
+      "estimatedDeliveryTime": "2025-11-13T12:00:00Z",
+      "createdAt": "2025-11-13T11:15:00Z",
+      "updatedAt": "2025-11-13T11:58:00Z",
+      "pickedUpAt": "2025-11-13T11:35:00Z",
+      "deliveredAt": "2025-11-13T11:58:00Z"
+    },
+    {
+      "orderId": "ORD005",
+      "riderId": "rider_001",
+      "customerName": "David Brown",
+      "customerPhone": "+1-555-0105",
+      "restaurantName": "Thai Kitchen",
+      "restaurantAddress": "678 River Rd, Riverside",
+      "pickupAddress": "678 River Rd, Riverside",
+      "deliveryAddress": "901 Hill St, Apt 8C, Hillside",
+      "distance": 3.9,
+      "deliveryFee": 8.75,
+      "status": "delivered",
+      "orderItems": [
+        {
+          "name": "Pad Thai",
+          "quantity": 2,
+          "price": 12.99
+        },
+        {
+          "name": "Green Curry",
+          "quantity": 1,
+          "price": 14.99
+        },
+        {
+          "name": "Spring Rolls",
+          "quantity": 1,
+          "price": 6.99
+        }
+      ],
+      "specialInstructions": "Medium spice level",
+      "estimatedPickupTime": "2025-11-13T10:45:00Z",
+      "estimatedDeliveryTime": "2025-11-13T11:15:00Z",
+      "createdAt": "2025-11-13T10:30:00Z",
+      "updatedAt": "2025-11-13T11:12:00Z",
+      "pickedUpAt": "2025-11-13T10:50:00Z",
+      "deliveredAt": "2025-11-13T11:12:00Z"
+    },
+    {
+      "orderId": "ORD006",
+      "riderId": "rider_001",
+      "customerName": "Lisa Anderson",
+      "customerPhone": "+1-555-0106",
+      "restaurantName": "Italian Bistro",
+      "restaurantAddress": "345 Park Ave, Downtown",
+      "pickupAddress": "345 Park Ave, Downtown",
+      "deliveryAddress": "222 Sunset Blvd, Unit 15, Westside",
+      "distance": 6.3,
+      "deliveryFee": 12.50,
+      "status": "delivered",
+      "orderItems": [
+        {
+          "name": "Spaghetti Carbonara",
+          "quantity": 1,
+          "price": 16.99
+        },
+        {
+          "name": "Caesar Salad",
+          "quantity": 1,
+          "price": 8.99
+        },
+        {
+          "name": "Tiramisu",
+          "quantity": 2,
+          "price": 7.99
+        }
+      ],
+      "specialInstructions": "No onions in salad",
+      "estimatedPickupTime": "2025-11-12T19:30:00Z",
+      "estimatedDeliveryTime": "2025-11-12T20:00:00Z",
+      "createdAt": "2025-11-12T19:15:00Z",
+      "updatedAt": "2025-11-12T19:55:00Z",
+      "pickedUpAt": "2025-11-12T19:35:00Z",
+      "deliveredAt": "2025-11-12T19:55:00Z"
+    },
+    {
+      "orderId": "ORD007",
+      "riderId": "rider_001",
+      "customerName": "Robert Taylor",
+      "customerPhone": "+1-555-0107",
+      "restaurantName": "Chinese Garden",
+      "restaurantAddress": "789 Dragon St, Chinatown",
+      "pickupAddress": "789 Dragon St, Chinatown",
+      "deliveryAddress": "444 Forest Ave, House 7, Woodland",
+      "distance": 4.7,
+      "deliveryFee": 10.00,
+      "status": "delivered",
+      "orderItems": [
+        {
+          "name": "Sweet and Sour Chicken",
+          "quantity": 1,
+          "price": 13.99
+        },
+        {
+          "name": "Fried Rice",
+          "quantity": 2,
+          "price": 8.99
+        },
+        {
+          "name": "Egg Rolls",
+          "quantity": 4,
+          "price": 1.99
+        }
+      ],
+      "specialInstructions": "Include fortune cookies",
+      "estimatedPickupTime": "2025-11-12T18:00:00Z",
+      "estimatedDeliveryTime": "2025-11-12T18:30:00Z",
+      "createdAt": "2025-11-12T17:45:00Z",
+      "updatedAt": "2025-11-12T18:28:00Z",
+      "pickedUpAt": "2025-11-12T18:05:00Z",
+      "deliveredAt": "2025-11-12T18:28:00Z"
+    },
+    {
+      "orderId": "ORD008",
+      "riderId": "rider_001",
+      "customerName": "Jennifer Martinez",
+      "customerPhone": "+1-555-0108",
+      "restaurantName": "Healthy Bowls",
+      "restaurantAddress": "111 Green St, Eco District",
+      "pickupAddress": "111 Green St, Eco District",
+      "deliveryAddress": "777 Beach Rd, Apt 22, Beachside",
+      "distance": 5.5,
+      "deliveryFee": 11.25,
+      "status": "delivered",
+      "orderItems": [
+        {
+          "name": "Acai Bowl",
+          "quantity": 2,
+          "price": 11.99
+        },
+        {
+          "name": "Quinoa Salad",
+          "quantity": 1,
+          "price": 10.99
+        },
+        {
+          "name": "Green Smoothie",
+          "quantity": 2,
+          "price": 6.99
+        }
+      ],
+      "specialInstructions": "Extra granola on acai bowl",
+      "estimatedPickupTime": "2025-11-11T12:00:00Z",
+      "estimatedDeliveryTime": "2025-11-11T12:30:00Z",
+      "createdAt": "2025-11-11T11:45:00Z",
+      "updatedAt": "2025-11-11T12:27:00Z",
+      "pickedUpAt": "2025-11-11T12:05:00Z",
+      "deliveredAt": "2025-11-11T12:27:00Z"
+    },
+    {
+      "orderId": "ORD009",
+      "riderId": "rider_001",
+      "customerName": "James Wilson",
+      "customerPhone": "+1-555-0109",
+      "restaurantName": "BBQ Smokehouse",
+      "restaurantAddress": "999 Smoke Ln, Industrial Area",
+      "pickupAddress": "999 Smoke Ln, Industrial Area",
+      "deliveryAddress": "333 Valley View, House 18, Valley",
+      "distance": 7.2,
+      "deliveryFee": 13.50,
+      "status": "delivered",
+      "orderItems": [
+        {
+          "name": "BBQ Ribs",
+          "quantity": 1,
+          "price": 22.99
+        },
+        {
+          "name": "Pulled Pork Sandwich",
+          "quantity": 1,
+          "price": 14.99
+        },
+        {
+          "name": "Coleslaw",
+          "quantity": 2,
+          "price": 3.99
+        }
+      ],
+      "specialInstructions": "Extra BBQ sauce",
+      "estimatedPickupTime": "2025-11-10T18:30:00Z",
+      "estimatedDeliveryTime": "2025-11-10T19:00:00Z",
+      "createdAt": "2025-11-10T18:15:00Z",
+      "updatedAt": "2025-11-10T18:58:00Z",
+      "pickedUpAt": "2025-11-10T18:35:00Z",
+      "deliveredAt": "2025-11-10T18:58:00Z"
+    },
+    {
+      "orderId": "ORD010",
+      "riderId": "rider_001",
+      "customerName": "Amanda Lee",
+      "customerPhone": "+1-555-0110",
+      "restaurantName": "Mediterranean Grill",
+      "restaurantAddress": "555 Olive St, Mediterranean Quarter",
+      "pickupAddress": "555 Olive St, Mediterranean Quarter",
+      "deliveryAddress": "666 Mountain Rd, Cabin 5, Mountain View",
+      "distance": 8.1,
+      "deliveryFee": 14.75,
+      "status": "delivered",
+      "orderItems": [
+        {
+          "name": "Lamb Gyro",
+          "quantity": 2,
+          "price": 13.99
+        },
+        {
+          "name": "Falafel Plate",
+          "quantity": 1,
+          "price": 11.99
+        },
+        {
+          "name": "Hummus",
+          "quantity": 1,
+          "price": 5.99
+        }
+      ],
+      "specialInstructions": "Include pita bread",
+      "estimatedPickupTime": "2025-11-09T19:00:00Z",
+      "estimatedDeliveryTime": "2025-11-09T19:35:00Z",
+      "createdAt": "2025-11-09T18:45:00Z",
+      "updatedAt": "2025-11-09T19:32:00Z",
+      "pickedUpAt": "2025-11-09T19:05:00Z",
+      "deliveredAt": "2025-11-09T19:32:00Z"
+    }
+  ]
+}

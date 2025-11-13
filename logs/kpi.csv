@@ -1,0 +1,99 @@
+Timestamp,Endpoint,Method,ResponseTime(ms),StatusCode,RiderId,Action,Details
+2025-11-13T05:00:00.000Z,/api/rider/orders,GET,45,200,rider_001,GET_ORDERS,"status=ongoing, count=3"
+2025-11-13T05:01:00.000Z,/api/rider/income/realtime,GET,23,200,rider_001,GET_REALTIME_INCOME,"availableBalance=-252.75"
+2025-11-13T05:02:00.000Z,/api/rider/order/ORD001,GET,18,200,rider_001,GET_ORDER_DETAIL,"orderId=ORD001"
+2025-11-13T05:03:00.000Z,/api/rider/income/withdraw,POST,67,201,rider_001,SUBMIT_WITHDRAWAL,"amount=50, withdrawalId=WD1731470400000"
+2025-11-13T05:04:00.000Z,/api/rider/income/trend,GET,34,200,rider_001,GET_INCOME_TREND,"period=daily"
+2025-11-13T05:23:51.016Z,/api/rider/orders,GET,0,200,rider_001,VIEW_ORDERS,"{""status"":""ongoing"",""count"":3}"
+2025-11-13T05:23:51.016Z,/api/rider/orders,GET,1,200,rider_001,GET_ORDERS,"status=ongoing, count=3"
+2025-11-13T05:23:51.019Z,/api/rider/orders,GET,0,200,rider_001,VIEW_ORDERS,"{""status"":""completed"",""count"":7}"
+2025-11-13T05:23:51.019Z,/api/rider/orders,GET,0,200,rider_001,GET_ORDERS,"status=completed, count=7"
+2025-11-13T05:23:51.022Z,/api/rider/orders,GET,0,200,rider_001,VIEW_ORDER_DETAIL,"{""orderId"":""ORD001"",""status"":""assigned""}"
+2025-11-13T05:23:51.022Z,/api/rider/order/ORD001,GET,0,200,rider_001,GET_ORDER_DETAIL,orderId=ORD001
+2025-11-13T05:23:51.025Z,/api/rider/orders,GET,0,200,rider_001,VIEW_STATISTICS,"{""total"":10,""ongoing"":3,""completed"":7,""cancelled"":0,""totalEarnings"":81.75,""todayEarnings"":19.75,""todayOrders"":5}"
+2025-11-13T05:23:51.025Z,/api/rider/orders/statistics,GET,1,200,rider_001,GET_ORDER_STATISTICS,"{""total"":10,""ongoing"":3,""completed"":7,""cancelled"":0,""totalEarnings"":81.75,""todayEarnings"":19.75,""todayOrders"":5}"
+2025-11-13T05:23:51.028Z,/api/rider/income,GET,0,200,rider_001,VIEW_REALTIME_INCOME,"{""availableBalance"":-268.25,""todayEarnings"":19.75}"
+2025-11-13T05:23:51.029Z,/api/rider/income/realtime,GET,2,200,rider_001,GET_REALTIME_INCOME,availableBalance=-268.25
+2025-11-13T05:23:51.032Z,/api/rider/income,GET,0,200,rider_001,VIEW_INCOME_TREND,"{""period"":""daily""}"
+2025-11-13T05:23:51.032Z,/api/rider/income/trend,GET,1,200,rider_001,GET_INCOME_TREND,period=daily
+2025-11-13T05:23:51.034Z,/api/rider/income,GET,0,200,rider_001,VIEW_INCOME_TREND,"{""period"":""weekly""}"
+2025-11-13T05:23:51.035Z,/api/rider/income/trend,GET,1,200,rider_001,GET_INCOME_TREND,period=weekly
+2025-11-13T05:23:51.037Z,/api/rider/income,GET,0,200,rider_001,VIEW_INCOME_TREND,"{""period"":""monthly""}"
+2025-11-13T05:23:51.037Z,/api/rider/income/trend,GET,0,200,rider_001,GET_INCOME_TREND,period=monthly
+2025-11-13T05:23:51.040Z,/api/rider/income,GET,0,200,rider_001,VIEW_WITHDRAWAL_RECORDS,"{""status"":""all"",""count"":4}"
+2025-11-13T05:23:51.040Z,/api/rider/income/records,GET,0,200,rider_001,GET_WITHDRAWAL_RECORDS,"status=all, count=4"
+2025-11-13T05:23:51.056Z,/api/rider/income,GET,0,200,rider_001,VIEW_REALTIME_INCOME,"{""availableBalance"":-268.25,""todayEarnings"":19.75}"
+2025-11-13T05:23:51.058Z,/api/rider/income/withdraw,POST,0,400,N/A,ERROR,Insufficient balance for withdrawal
+2025-11-13T05:23:51.059Z,/api/nonexistent,GET,0,404,N/A,404_NOT_FOUND,Route not found: GET /api/nonexistent
+2025-11-13T05:38:48.606Z,/api/rider/orders,GET,0,200,rider_001,VIEW_ORDERS,"{""status"":""ongoing"",""count"":3}"
+2025-11-13T05:38:48.607Z,/api/rider/orders,GET,2,200,rider_001,GET_ORDERS,"status=ongoing, count=3"
+2025-11-13T05:39:03.208Z,/api/rider/orders,GET,0,200,rider_001,VIEW_ORDERS,"{""status"":""completed"",""count"":7}"
+2025-11-13T05:39:03.209Z,/api/rider/orders,GET,1,200,rider_001,GET_ORDERS,"status=completed, count=7"
+2025-11-13T05:39:13.163Z,/api/rider/orders,GET,0,200,rider_001,VIEW_ORDER_DETAIL,"{""orderId"":""ORD001"",""status"":""assigned""}"
+2025-11-13T05:39:13.164Z,/api/rider/order/ORD001,GET,1,200,rider_001,GET_ORDER_DETAIL,orderId=ORD001
+2025-11-13T05:39:20.236Z,/api/rider/orders,GET,0,200,rider_001,VIEW_STATISTICS,"{""total"":10,""ongoing"":3,""completed"":7,""cancelled"":0,""totalEarnings"":81.75,""todayEarnings"":19.75,""todayOrders"":5}"
+2025-11-13T05:39:20.236Z,/api/rider/orders/statistics,GET,1,200,rider_001,GET_ORDER_STATISTICS,"{""total"":10,""ongoing"":3,""completed"":7,""cancelled"":0,""totalEarnings"":81.75,""todayEarnings"":19.75,""todayOrders"":5}"
+2025-11-13T05:39:28.752Z,/api/rider/income,GET,0,200,rider_001,VIEW_REALTIME_INCOME,"{""availableBalance"":-268.25,""todayEarnings"":19.75}"
+2025-11-13T05:39:28.753Z,/api/rider/income/realtime,GET,2,200,rider_001,GET_REALTIME_INCOME,availableBalance=-268.25
+2025-11-13T05:39:35.926Z,/api/rider/income,GET,0,200,rider_001,VIEW_INCOME_TREND,"{""period"":""daily""}"
+2025-11-13T05:39:35.927Z,/api/rider/income/trend,GET,1,200,rider_001,GET_INCOME_TREND,period=daily
+2025-11-13T05:39:44.069Z,/api/rider/income,GET,0,200,rider_001,VIEW_INCOME_TREND,"{""period"":""weekly""}"
+2025-11-13T05:39:44.070Z,/api/rider/income/trend,GET,2,200,rider_001,GET_INCOME_TREND,period=weekly
+2025-11-13T05:39:50.079Z,/api/rider/income,GET,0,200,rider_001,VIEW_INCOME_TREND,"{""period"":""monthly""}"
+2025-11-13T05:39:50.079Z,/api/rider/income/trend,GET,1,200,rider_001,GET_INCOME_TREND,period=monthly
+2025-11-13T05:39:56.959Z,/api/rider/income,GET,0,200,rider_001,VIEW_WITHDRAWAL_RECORDS,"{""status"":""all"",""count"":4}"
+2025-11-13T05:39:56.960Z,/api/rider/income/records,GET,1,200,rider_001,GET_WITHDRAWAL_RECORDS,"status=all, count=4"
+2025-11-13T05:40:28.657Z,/api/rider/income,GET,0,200,rider_001,VIEW_REALTIME_INCOME,"{""availableBalance"":-268.25,""todayEarnings"":19.75}"
+2025-11-13T05:40:28.658Z,/api/rider/income/withdraw,POST,0,400,N/A,ERROR,Insufficient balance for withdrawal
+2025-11-13T05:40:43.611Z,/api/nonexistent,GET,0,404,N/A,404_NOT_FOUND,Route not found: GET /api/nonexistent
+2025-11-13T05:41:47.079Z,/api/rider/orders,GET,0,200,rider_001,VIEW_ORDERS,"{""status"":""ongoing"",""count"":3}"
+2025-11-13T05:41:47.079Z,/api/rider/orders,GET,0,200,rider_001,GET_ORDERS,"status=ongoing, count=3"
+2025-11-13T05:41:47.090Z,/api/rider/orders,GET,0,200,rider_001,VIEW_ORDERS,"{""status"":""completed"",""count"":7}"
+2025-11-13T05:41:47.091Z,/api/rider/orders,GET,1,200,rider_001,GET_ORDERS,"status=completed, count=7"
+2025-11-13T05:41:47.103Z,/api/rider/orders,GET,0,200,rider_001,GET_ORDERS,"status=all, count=10"
+2025-11-13T05:41:47.115Z,/api/rider/orders,GET,0,200,rider_001,VIEW_ORDER_DETAIL,"{""orderId"":""ORD001"",""status"":""assigned""}"
+2025-11-13T05:41:47.115Z,/api/rider/order/ORD001,GET,0,200,rider_001,GET_ORDER_DETAIL,orderId=ORD001
+2025-11-13T05:41:47.131Z,/api/rider/orders,GET,0,200,rider_001,VIEW_STATISTICS,"{""total"":10,""ongoing"":3,""completed"":7,""cancelled"":0,""totalEarnings"":81.75,""todayEarnings"":19.75,""todayOrders"":5}"
+2025-11-13T05:41:47.131Z,/api/rider/orders/statistics,GET,1,200,rider_001,GET_ORDER_STATISTICS,"{""total"":10,""ongoing"":3,""completed"":7,""cancelled"":0,""totalEarnings"":81.75,""todayEarnings"":19.75,""todayOrders"":5}"
+2025-11-13T05:41:47.141Z,/api/rider/orders/recent,GET,0,200,rider_001,GET_RECENT_ORDERS,"limit=5, count=5"
+2025-11-13T05:41:47.153Z,/api/rider/orders/search,GET,0,200,rider_001,SEARCH_ORDERS,"query=pizza, count=0"
+2025-11-13T05:41:47.165Z,/api/rider/income,GET,0,200,rider_001,VIEW_REALTIME_INCOME,"{""availableBalance"":-268.25,""todayEarnings"":19.75}"
+2025-11-13T05:41:47.166Z,/api/rider/income/realtime,GET,0,200,rider_001,GET_REALTIME_INCOME,availableBalance=-268.25
+2025-11-13T05:41:47.175Z,/api/rider/income,GET,0,200,rider_001,VIEW_INCOME_TREND,"{""period"":""daily""}"
+2025-11-13T05:41:47.176Z,/api/rider/income/trend,GET,1,200,rider_001,GET_INCOME_TREND,period=daily
+2025-11-13T05:41:47.191Z,/api/rider/income,GET,0,200,rider_001,VIEW_INCOME_TREND,"{""period"":""weekly""}"
+2025-11-13T05:41:47.191Z,/api/rider/income/trend,GET,0,200,rider_001,GET_INCOME_TREND,period=weekly
+2025-11-13T05:41:47.205Z,/api/rider/income,GET,0,200,rider_001,VIEW_INCOME_TREND,"{""period"":""monthly""}"
+2025-11-13T05:41:47.206Z,/api/rider/income/trend,GET,1,200,rider_001,GET_INCOME_TREND,period=monthly
+2025-11-13T05:41:47.216Z,/api/rider/income,GET,0,200,rider_001,VIEW_REALTIME_INCOME,"{""availableBalance"":-268.25,""todayEarnings"":19.75}"
+2025-11-13T05:41:47.218Z,/api/rider/income/withdraw,POST,0,400,N/A,ERROR,Insufficient balance for withdrawal
+2025-11-13T05:41:47.236Z,/api/rider/income,GET,0,200,rider_001,VIEW_WITHDRAWAL_RECORDS,"{""status"":""all"",""count"":4}"
+2025-11-13T05:41:47.237Z,/api/rider/income/records,GET,1,200,rider_001,GET_WITHDRAWAL_RECORDS,"status=all, count=4"
+2025-11-13T05:41:47.248Z,/api/rider/income,GET,0,200,rider_001,VIEW_WITHDRAWAL_RECORDS,"{""status"":""pending"",""count"":1}"
+2025-11-13T05:41:47.249Z,/api/rider/income/records,GET,1,200,rider_001,GET_WITHDRAWAL_RECORDS,"status=pending, count=1"
+2025-11-13T05:41:47.261Z,/api/rider/income,GET,0,200,rider_001,VIEW_WITHDRAWAL_RECORDS,"{""status"":""completed"",""count"":2}"
+2025-11-13T05:41:47.261Z,/api/rider/income/records,GET,0,200,rider_001,GET_WITHDRAWAL_RECORDS,"status=completed, count=2"
+2025-11-13T05:41:47.276Z,/api/rider/income,GET,0,200,rider_001,WITHDRAWAL_REQUEST,"{""amount"":75.5,""status"":""completed"",""timestamp"":""2025-11-13T05:41:47.276Z""}"
+2025-11-13T05:41:47.277Z,/api/rider/income/withdraw/WD1700049600000,PUT,2,200,rider_001,UPDATE_WITHDRAWAL_STATUS,"withdrawalId=WD1700049600000, status=completed"
+2025-11-13T05:47:12.453Z,/health,GET,0,404,N/A,404_NOT_FOUND,Route not found: GET /health
+2025-11-13T05:47:25.970Z,/api/rider/orders,GET,0,200,rider_001,VIEW_ORDERS,"{""status"":""ongoing"",""count"":3}"
+2025-11-13T05:47:25.970Z,/api/rider/orders,GET,1,200,rider_001,GET_ORDERS,"status=ongoing, count=3"
+2025-11-13T05:47:25.973Z,/api/rider/orders,GET,0,200,rider_001,VIEW_ORDERS,"{""status"":""completed"",""count"":7}"
+2025-11-13T05:47:25.973Z,/api/rider/orders,GET,0,200,rider_001,GET_ORDERS,"status=completed, count=7"
+2025-11-13T05:47:25.975Z,/api/rider/orders,GET,0,200,rider_001,VIEW_ORDER_DETAIL,"{""orderId"":""ORD001"",""status"":""assigned""}"
+2025-11-13T05:47:25.976Z,/api/rider/order/ORD001,GET,1,200,rider_001,GET_ORDER_DETAIL,orderId=ORD001
+2025-11-13T05:47:25.977Z,/api/rider/orders,GET,0,200,rider_001,VIEW_STATISTICS,"{""total"":10,""ongoing"":3,""completed"":7,""cancelled"":0,""totalEarnings"":81.75,""todayEarnings"":19.75,""todayOrders"":5}"
+2025-11-13T05:47:25.978Z,/api/rider/orders/statistics,GET,1,200,rider_001,GET_ORDER_STATISTICS,"{""total"":10,""ongoing"":3,""completed"":7,""cancelled"":0,""totalEarnings"":81.75,""todayEarnings"":19.75,""todayOrders"":5}"
+2025-11-13T05:47:25.981Z,/api/rider/income,GET,0,200,rider_001,VIEW_REALTIME_INCOME,"{""availableBalance"":-343.75,""todayEarnings"":19.75}"
+2025-11-13T05:47:25.981Z,/api/rider/income/realtime,GET,1,200,rider_001,GET_REALTIME_INCOME,availableBalance=-343.75
+2025-11-13T05:47:25.983Z,/api/rider/income,GET,0,200,rider_001,VIEW_INCOME_TREND,"{""period"":""daily""}"
+2025-11-13T05:47:25.984Z,/api/rider/income/trend,GET,1,200,rider_001,GET_INCOME_TREND,period=daily
+2025-11-13T05:47:25.986Z,/api/rider/income,GET,0,200,rider_001,VIEW_INCOME_TREND,"{""period"":""weekly""}"
+2025-11-13T05:47:25.986Z,/api/rider/income/trend,GET,0,200,rider_001,GET_INCOME_TREND,period=weekly
+2025-11-13T05:47:25.988Z,/api/rider/income,GET,0,200,rider_001,VIEW_INCOME_TREND,"{""period"":""monthly""}"
+2025-11-13T05:47:25.989Z,/api/rider/income/trend,GET,1,200,rider_001,GET_INCOME_TREND,period=monthly
+2025-11-13T05:47:25.991Z,/api/rider/income,GET,0,200,rider_001,VIEW_WITHDRAWAL_RECORDS,"{""status"":""all"",""count"":4}"
+2025-11-13T05:47:25.991Z,/api/rider/income/records,GET,0,200,rider_001,GET_WITHDRAWAL_RECORDS,"status=all, count=4"
+2025-11-13T05:47:26.008Z,/api/rider/income,GET,0,200,rider_001,VIEW_REALTIME_INCOME,"{""availableBalance"":-343.75,""todayEarnings"":19.75}"
+2025-11-13T05:47:26.010Z,/api/rider/income/withdraw,POST,0,400,N/A,ERROR,Insufficient balance for withdrawal
+2025-11-13T05:47:26.012Z,/api/nonexistent,GET,0,404,N/A,404_NOT_FOUND,Route not found: GET /api/nonexistent
